@@ -36,3 +36,15 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
+for(let i=0; i < data.length; i++){
+    let pokemon = data[i] // pegou a unidade do pokemon, está percorrendo uma lista de objetos. Cada um dos elementos do index se chama pokemon.
+    console.log(pokemon.name) // cada propriedade que queremos ver.
+    console.log(pokemon.description)
+    console.log(pokemon.types)
+
+    let tipos = pokemon.types // fez fora do primeiro for porque está tratando títulos como tratou data, está percorrendo ele. Isso que faz com que o for embaixo reconheça o tipos como types.
+
+    for(let j=0; j< tipos.length; j++) //fez um segundo for para percorrer a segunda lista.
+    console.log(tipos[j])
+
+} // A boa prática é usar i j k, ter mais de 3 fors um denro do outro não é boa prática.
