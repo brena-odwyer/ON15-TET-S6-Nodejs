@@ -75,3 +75,25 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+for (let i = 0; i <obj.length; i++){ // percorrendo a array. o i começa no zero, vai até o final da length do obj, e vai de um em um.
+        let movie = obj[i]
+        console.log(movie.Title)
+        console.log(movie.Year)
+        console.log(movie.Genre)
+}
+
+// dúvida: os laços servem apenas para trabalhar com array? Qual seria o objetivo sem uma array?
+// 
+//     Solução da Paola, que ela compartilhou conosco no dia que estudamos juntas. O segundo for tem que ser dentro do primeiro.
+//     for(let i=0; i < obj.length; i++){
+//     let filme = obj[i]
+//     console.log(filme.Title)
+//     console.log(filme.Year)
+    
+//     let genero = filme.Genre.split(",")
+//     for(let j=0; j < genero.length; j++){
+//         console.log(genero[j]);        
+//     }       
+    
+//   }

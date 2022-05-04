@@ -149,3 +149,38 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// Fiz três tentativas (que não funcionaram) achando que era pra trazer só o "aliceblue" e não todas as cores, mas queria deixar minha lógica aqui.
+//     for(let i =0; i<obj.length; i++){       //tentativa 1
+//     obj.split(",")
+//     console.log(obj[aliceblue])
+//     let color = obj.filter(aliceblue)
+//     console.log(color)
+// }
+
+// let u = 0;              //tentativa 2
+// while(u <obj.length){
+//     if(u == "aliceblue"){
+//     console.log(u)
+//     }
+// }
+
+// for (let color of obj){    // tentativa 3
+//     obj.split(",")
+//     obj.filter(aliceblue)
+//     console.log(obj)
+// }
+
+// for(let i = 0; i <obj.length; i++){ // Esse aqui fiz sozinha e funciona, mas não vem com o RGB no meio como pede o exercício.
+//     let colors = obj[i]
+//     console.log(colors)
+
+// }
+
+// Fizemos juntas no grupo de estudos (não lembrava desse for in).
+for(let i = 0; i <obj.length; i++) {
+    let colors = obj[i]
+    for (chave in colors){
+        console.log(`${chave} RGB: ${colors[chave]}`)
+    }
+}
