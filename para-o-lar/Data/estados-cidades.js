@@ -5741,15 +5741,25 @@ const estados = [
 
 // Tentativa que fizemos juntas no grupo de estudos.
 
-function listarCidades (cidade){
-  const filtrandoEstados = estados.filter(({sigla}) => sigla == cidade)
-      for(let i of filtrandoEstados) {
-          let municipios = i.cidades
+// function listarCidades (cidade){
+//   const filtrandoEstados = estados.filter(({sigla}) => sigla == cidade)
+//       for(let i of filtrandoEstados) {
+//           let municipios = i.cidades
 
-          for(let j of municipios) { // O primeiro for pra encontrar a array e esse segundo para tirar a array da array.
-            console.log(j)
-          }
-      }
-}
+//           for(let j of municipios) { // O primeiro for pra encontrar a array e esse segundo para tirar a array da array.
+//             console.log(j)
+//           }
+//       }
+// }
 
-listarCidades("ES")
+// listarCidades("ES")
+
+// Tentando fazer sozinha só com o for como a profa pediu
+ function listarCidades(cidades){
+   for(i=0; i<estados.length; i++){
+     let sigla = estados[i]
+
+   }
+ }
+
+ console.log(listarCidades("ES")) // dá undefined.

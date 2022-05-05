@@ -177,10 +177,20 @@ const obj = [{
 
 // }
 
-// Fizemos juntas no grupo de estudos (não lembrava desse for in).
-for(let i = 0; i <obj.length; i++) {
-    let colors = obj[i]
-    for (chave in colors){
-        console.log(`${chave} RGB: ${colors[chave]}`)
+// Fizemos juntas no grupo de estudos (não lembrava desse for in). Esse funciona.
+// for(let i = 0; i <obj.length; i++) {
+//     let colors = obj[i]
+//     for (chave in colors){
+//         console.log(`${chave} RGB: ${colors[chave]}`)
+//     }
+// }
+
+// Tentando fazer sozinha só com for como pedido pela profa
+for(let i=0; i < obj.length; i++){
+    let color = Object.entries(obj[i]) // esse object.entries transforma a string do key numa array.
+    for(let j=0; j <color.length; j++){
+        let chave = color[j]
+        console.log(`${chave} RGB ${color}`) // funcionou bem zoado.
     }
+
 }
