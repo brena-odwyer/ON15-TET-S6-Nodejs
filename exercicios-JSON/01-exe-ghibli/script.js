@@ -25,6 +25,11 @@ const jsonDeFilmes = [
 
 //Apresente no console cada um dos atributos desse JS
 // COMEÇA O EXERCÍCIO
+for(let i=0; i < jsonDeFilmes.length; i++){
+  let movie = jsonDeFilmes[i]
+  console.log(movie.title)
+  console.log(movie.description)
+}
 
 
 

@@ -189,8 +189,8 @@ const obj = [{
 for(let i=0; i < obj.length; i++){
     let color = Object.entries(obj[i]) // esse object.entries transforma a string do key numa array.
     for(let j=0; j <color.length; j++){
-        let chave = color[j]
-        console.log(`${chave} RGB ${color}`) // funcionou bem zoado.
+        let chave = color.toString([j])
+        console.log(`${color} RGB ${chave}`) // funcionou bem zoado.
     }
 
 }
