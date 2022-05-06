@@ -5755,11 +5755,32 @@ const estados = [
 // listarCidades("ES")
 
 // Tentando fazer sozinha só com o for como a profa pediu
- function listarCidades(cidades){
-   for(i=0; i<estados.length; i++){
-     let sigla = estados[i]
+//  function listarCidades(cidades){
+//    for(i=0; i<estados.length; i++){
+//      let sigla = estados[i]
 
-   }
- }
+//    }
+//  }
 
- console.log(listarCidades("ES")) // dá undefined.
+//  console.log(listarCidades("ES")) // dá undefined.
+
+// Fazendo no plantão de dúvidas com Xênia e Jana - 5 maio 2022
+// let uf = estados[0].sigla
+// for(i=0; i <uf.length; i++){
+//   let municipio = uf[i]
+//   console.log(municipio.cidades.toString()) // Primeira tentativa não funcionou.
+// }
+
+// for(let i =0; i <estados.length; i++){ // Funciona, mas não é o enunciado.
+//   let acessaEstados = estados[i]
+//   console.log("\n***********************")
+//   console.log(`Estado: ${acessaEstados.nome} - (${acessaEstados.sigla})`)
+//   console.log(`Ele possuí ${acessaEstados.cidades.length} cidades, estas são: ${acessaEstados.cidades.toString()}`)
+
+// }
+
+function retornaEstado(sigla) {
+  return estados.find((estado) => estado.sigla == sigla)
+}
+
+console.log(retornaEstado("TO"))

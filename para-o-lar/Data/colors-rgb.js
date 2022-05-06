@@ -181,16 +181,33 @@ const obj = [{
 // for(let i = 0; i <obj.length; i++) {
 //     let colors = obj[i]
 //     for (chave in colors){
-//         console.log(`${chave} RGB: ${colors[chave]}`)
+//         console.log(`${chave} RGB: ${colors[chave]}`) // Funciona direitinho.
 //     }
 // }
 
 // Tentando fazer sozinha só com for como pedido pela profa
-for(let i=0; i < obj.length; i++){
-    let color = Object.entries(obj[i]) // esse object.entries transforma a string do key numa array.
-    for(let j=0; j <color.length; j++){
-        let chave = color.toString([j])
-        console.log(`${color} RGB ${chave}`) // funcionou bem zoado.
-    }
+// for(let i=0; i < obj.length; i++){
+//     let color = Object.entries(obj[i]) // esse object.entries transforma a string do key numa array.
+//     for(let j=0; j <color.length; j++){
+//         let chave = color.toString([j])
+//         console.log(`${color} RGB ${chave}`) // Funcionou bem zoado.
+//     }
+
+// }
+
+// Fazendo no plantão de dúvidas com Xênia e Jana - 5/maio/2022
+// for(let i=0; i < obj.length; i++){
+//     let color = obj[i]
+//     let chave = Object.values(obj)
+//     console.log(`${color} RGB ${chave}`) // Primeira tentativa, não funcionou.
+    
+// }
+
+let novoObjeto = obj[0] // é um index único do array obj. A cont obj é uma array de objetos, com um único objeto.
+let valor = Object.values(novoObjeto)
+let chave = Object.keys(novoObjeto)
+
+for(let i=0; i < chave.length; i++){
+    console.log(`${chave[i]} RGB: ${valor[i]}`)
 
 }
