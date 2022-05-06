@@ -5764,7 +5764,7 @@ const estados = [
 
 //  console.log(listarCidades("ES")) // dá undefined.
 
-// Fazendo no plantão de dúvidas com Xênia e Jana - 5 maio 2022
+// Fazendo no plantão de dúvidas com Xênia e Jana - 5 maio 2022:
 // let uf = estados[0].sigla
 // for(i=0; i <uf.length; i++){
 //   let municipio = uf[i]
@@ -5779,8 +5779,15 @@ const estados = [
 
 // }
 
-function retornaEstado(sigla) {
-  return estados.find((estado) => estado.sigla == sigla)
+function retornaEstado(entrada) {        // Não usa o for, mas funciona bem.
+  return estados.find((uf) => uf.sigla == entrada)
 }
 
 console.log(retornaEstado("TO"))
+
+// function retornaEstado(sigla) {      // Igual a de cima, mas fica sem "sigla, nome e cidades" no return.
+//   let estado =  estados.find((estado) => estado.sigla == sigla)
+//   return estado.cidades
+// }
+
+// console.log(retornaEstado("TO"))
