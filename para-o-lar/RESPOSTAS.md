@@ -31,7 +31,7 @@ Feito.
 Feito.
 
 8.Do arquivo estados-cidade dado uma sigla retorne no terminal a lista de cidades.
-Feiot.
+Feito.
 
  <!-- Para subir no git hub a partir da minha branch
  -- git add .
